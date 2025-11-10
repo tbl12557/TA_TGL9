@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 30, 2025 at 12:51 AM
+-- Generation Time: Nov 10, 2025 at 01:06 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `absences` (
-  `id` bigint(20) UNSIGNED NOT NULL,
+  `id` int(20) UNSIGNED NOT NULL,
   `user_id` bigint(20) UNSIGNED NOT NULL,
   `login_at` time NOT NULL,
   `logout_at` time DEFAULT NULL,
@@ -41,81 +41,12 @@ CREATE TABLE `absences` (
 --
 
 INSERT INTO `absences` (`id`, `user_id`, `login_at`, `logout_at`, `created_at`, `updated_at`) VALUES
-(81, 16, '14:25:00', '14:26:00', '2025-09-04 07:25:24', '2025-09-04 07:26:24'),
-(82, 12, '14:26:00', '14:27:00', '2025-09-04 07:26:33', '2025-09-04 07:27:27'),
-(83, 12, '04:09:00', '04:16:00', '2025-09-07 21:09:06', '2025-09-07 21:16:48'),
-(85, 12, '15:36:00', '15:39:00', '2025-09-10 08:36:54', '2025-09-10 08:39:23'),
-(86, 15, '15:39:00', '15:41:00', '2025-09-10 08:39:29', '2025-09-10 08:41:20'),
-(87, 16, '15:45:00', '15:45:00', '2025-09-10 08:45:14', '2025-09-10 08:45:25'),
-(88, 16, '16:22:00', '17:17:00', '2025-09-10 09:22:31', '2025-09-10 10:17:21'),
-(89, 16, '17:17:00', '17:21:00', '2025-09-10 10:17:39', '2025-09-10 10:21:51'),
-(90, 16, '17:22:00', '17:38:00', '2025-09-10 10:22:08', '2025-09-10 10:38:58'),
-(91, 16, '17:39:00', NULL, '2025-09-10 10:39:06', '2025-09-10 10:39:06'),
-(92, 14, '22:20:00', '22:20:00', '2025-09-10 15:20:29', '2025-09-10 15:20:48'),
-(93, 16, '22:20:00', '22:25:00', '2025-09-10 15:20:55', '2025-09-10 15:25:34'),
-(94, 14, '22:25:00', '22:31:00', '2025-09-10 15:25:49', '2025-09-10 15:31:26'),
-(95, 16, '22:31:00', NULL, '2025-09-10 15:31:34', '2025-09-10 15:31:34'),
-(96, 16, '13:00:00', '13:04:00', '2025-09-11 06:00:59', '2025-09-11 06:04:23'),
-(97, 14, '13:04:00', '13:12:00', '2025-09-11 06:04:48', '2025-09-11 06:12:03'),
-(98, 16, '13:12:00', '14:06:00', '2025-09-11 06:12:12', '2025-09-11 07:06:40'),
-(99, 16, '14:06:00', '14:22:00', '2025-09-11 07:06:53', '2025-09-11 07:22:51'),
-(100, 16, '14:26:00', '14:26:00', '2025-09-11 07:26:06', '2025-09-11 07:26:22'),
-(101, 15, '14:26:00', '14:28:00', '2025-09-11 07:26:46', '2025-09-11 07:28:57'),
-(102, 14, '14:29:00', NULL, '2025-09-11 07:29:04', '2025-09-11 07:29:04'),
-(103, 11, '22:09:00', '22:47:00', '2025-09-16 15:09:10', '2025-09-16 15:47:42'),
-(104, 15, '22:47:00', '23:10:00', '2025-09-16 15:47:49', '2025-09-16 16:10:10'),
-(105, 15, '23:10:00', '23:11:00', '2025-09-16 16:10:21', '2025-09-16 16:11:39'),
-(106, 16, '23:11:00', '23:12:00', '2025-09-16 16:11:45', '2025-09-16 16:12:44'),
-(107, 12, '23:12:00', '23:30:00', '2025-09-16 16:12:52', '2025-09-16 16:30:51'),
-(108, 13, '23:31:00', '23:31:00', '2025-09-16 16:31:07', '2025-09-16 16:31:17'),
-(109, 11, '23:31:00', NULL, '2025-09-16 16:31:29', '2025-09-16 16:31:29'),
-(110, 16, '18:33:00', '18:34:00', '2025-09-17 11:33:10', '2025-09-17 11:34:48'),
-(111, 11, '18:34:00', '18:35:00', '2025-09-17 11:34:57', '2025-09-17 11:35:27'),
-(112, 14, '18:35:00', '18:37:00', '2025-09-17 11:35:40', '2025-09-17 11:37:07'),
-(113, 16, '18:37:00', '18:49:00', '2025-09-17 11:37:13', '2025-09-17 11:49:07'),
-(114, 14, '18:49:00', '18:56:00', '2025-09-17 11:49:18', '2025-09-17 11:56:57'),
-(115, 12, '19:15:00', '19:22:00', '2025-09-17 12:15:04', '2025-09-17 12:22:53'),
-(116, 12, '19:23:00', '20:34:00', '2025-09-17 12:23:06', '2025-09-17 13:34:08'),
-(117, 15, '20:34:00', '20:34:00', '2025-09-17 13:34:15', '2025-09-17 13:34:42'),
-(118, 15, '20:34:00', '20:35:00', '2025-09-17 13:34:47', '2025-09-17 13:35:01'),
-(119, 12, '20:35:00', '20:36:00', '2025-09-17 13:35:14', '2025-09-17 13:36:42'),
-(120, 15, '20:36:00', '20:38:00', '2025-09-17 13:36:50', '2025-09-17 13:38:12'),
-(121, 12, '20:38:00', '20:39:00', '2025-09-17 13:38:22', '2025-09-17 13:39:45'),
-(122, 15, '20:39:00', '20:52:00', '2025-09-17 13:39:51', '2025-09-17 13:52:57'),
-(123, 12, '20:53:00', '23:02:00', '2025-09-17 13:53:28', '2025-09-17 16:02:34'),
-(124, 12, '23:02:00', NULL, '2025-09-17 16:02:44', '2025-09-17 16:02:44'),
-(125, 16, '12:09:00', '12:10:00', '2025-09-19 05:09:19', '2025-09-19 05:10:21'),
-(126, 12, '12:10:00', NULL, '2025-09-19 05:10:30', '2025-09-19 05:10:30'),
-(127, 12, '14:41:00', NULL, '2025-09-19 07:41:38', '2025-09-19 07:41:38'),
-(128, 15, '11:18:00', '11:20:00', '2025-10-07 04:18:46', '2025-10-07 04:20:01'),
-(129, 12, '11:20:00', NULL, '2025-10-07 04:20:10', '2025-10-07 04:20:10'),
-(130, 12, '20:34:00', NULL, '2025-10-07 13:34:32', '2025-10-07 13:34:32'),
-(131, 12, '17:40:00', '17:47:00', '2025-10-22 10:40:51', '2025-10-22 10:47:54'),
-(132, 18, '17:49:00', '17:50:00', '2025-10-22 10:49:05', '2025-10-22 10:50:00'),
-(133, 12, '17:50:00', NULL, '2025-10-22 10:50:07', '2025-10-22 10:50:07'),
-(134, 12, '16:04:00', '16:23:00', '2025-10-29 09:04:40', '2025-10-29 09:23:38'),
-(135, 12, '16:23:00', NULL, '2025-10-29 09:23:56', '2025-10-29 09:23:56'),
-(136, 12, '19:39:00', '20:22:00', '2025-10-29 12:39:48', '2025-10-29 13:22:05'),
-(137, 12, '20:25:00', '20:31:00', '2025-10-29 13:25:32', '2025-10-29 13:31:08'),
-(138, 15, '20:31:00', '20:31:00', '2025-10-29 13:31:13', '2025-10-29 13:31:33'),
-(139, 13, '20:38:00', '20:41:00', '2025-10-29 13:38:29', '2025-10-29 13:41:54'),
-(140, 16, '20:43:00', '20:44:00', '2025-10-29 13:43:50', '2025-10-29 13:44:06'),
-(141, 15, '20:44:00', '20:48:00', '2025-10-29 13:44:15', '2025-10-29 13:48:56'),
-(142, 16, '20:49:00', '20:49:00', '2025-10-29 13:49:06', '2025-10-29 13:49:22'),
-(143, 16, '20:51:00', NULL, '2025-10-29 13:51:41', '2025-10-29 13:51:41'),
-(144, 12, '20:55:00', '20:55:00', '2025-10-29 13:55:44', '2025-10-29 13:55:55'),
-(145, 15, '20:56:00', NULL, '2025-10-29 13:56:10', '2025-10-29 13:56:10'),
-(146, 12, '21:03:00', '21:05:00', '2025-10-29 14:03:44', '2025-10-29 14:05:42'),
-(147, 12, '21:08:00', '21:09:00', '2025-10-29 14:08:26', '2025-10-29 14:09:47'),
-(148, 16, '21:09:00', NULL, '2025-10-29 14:09:58', '2025-10-29 14:09:58'),
-(149, 13, '21:44:00', '21:48:00', '2025-10-29 14:44:37', '2025-10-29 14:48:09'),
-(150, 16, '21:48:00', '22:01:00', '2025-10-29 14:48:16', '2025-10-29 15:01:35'),
-(151, 12, '22:01:00', '22:02:00', '2025-10-29 15:01:44', '2025-10-29 15:02:29'),
-(152, 16, '22:02:00', NULL, '2025-10-29 15:02:38', '2025-10-29 15:02:38'),
-(153, 16, '22:09:00', NULL, '2025-10-29 15:09:35', '2025-10-29 15:09:35'),
-(154, 16, '23:09:00', NULL, '2025-10-29 16:09:52', '2025-10-29 16:09:52'),
-(155, 13, '23:10:00', NULL, '2025-10-29 16:10:09', '2025-10-29 16:10:09'),
-(156, 13, '23:11:00', '23:11:00', '2025-10-29 16:11:05', '2025-10-29 16:11:12');
+(50, 16, '22:37:00', NULL, '2025-11-07 15:37:11', '2025-11-07 15:37:11'),
+(51, 14, '23:07:00', '23:08:00', '2025-11-07 16:07:42', '2025-11-07 16:08:22'),
+(52, 16, '23:08:00', NULL, '2025-11-07 16:08:28', '2025-11-07 16:08:28'),
+(53, 16, '23:17:00', NULL, '2025-11-07 16:17:46', '2025-11-07 16:17:46'),
+(54, 16, '23:29:00', NULL, '2025-11-07 16:29:21', '2025-11-07 16:29:21'),
+(55, 15, '23:29:00', NULL, '2025-11-07 16:29:45', '2025-11-07 16:29:45');
 
 -- --------------------------------------------------------
 
@@ -160,6 +91,28 @@ CREATE TABLE `carts` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `cart_items`
+--
+
+CREATE TABLE `cart_items` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `user_id` bigint(20) UNSIGNED NOT NULL,
+  `item_id` bigint(20) UNSIGNED NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `cart_items`
+--
+
+INSERT INTO `cart_items` (`id`, `user_id`, `item_id`, `quantity`, `created_at`, `updated_at`) VALUES
+(1, 16, 314, 1, '2025-11-07 16:29:06', '2025-11-07 16:29:06');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `categories`
 --
 
@@ -176,12 +129,12 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`, `description`, `created_at`, `updated_at`) VALUES
-(21, 'Makanan dan Minuman', NULL, '2025-07-22 07:13:43', '2025-07-22 07:13:43'),
-(22, 'produk rumah tangga', NULL, '2025-07-22 07:15:58', '2025-07-22 07:15:58'),
-(23, 'Kesehatan & Perawatan Diri', NULL, '2025-07-22 07:16:06', '2025-07-22 07:16:06'),
-(24, 'Kebutuhan Bayi & Anak', NULL, '2025-07-22 07:16:15', '2025-07-22 07:16:15'),
-(25, 'Alat Tulis & Perlengkapan Sekolah', NULL, '2025-07-22 07:16:24', '2025-07-22 07:16:24'),
-(26, 'Peralatan Rumah Tangga', NULL, '2025-07-22 07:16:33', '2025-07-22 07:16:33');
+(21, 'Makanan dan Minuman', NULL, '2025-11-04 23:20:03', '2025-11-04 23:20:03'),
+(22, 'Buku dan alat tulis', NULL, '2025-11-04 23:22:17', '2025-11-04 23:22:17'),
+(23, 'Peralatan rumah tangga', NULL, '2025-11-04 23:22:33', '2025-11-04 23:22:33'),
+(24, 'Kosmetik dan perawatan diri', NULL, '2025-11-04 23:22:48', '2025-11-04 23:22:48'),
+(25, 'Kesehatan & Obat-Obatan Ringan', NULL, '2025-11-04 23:24:24', '2025-11-04 23:24:24'),
+(26, 'Lainnya', NULL, '2025-11-04 23:25:38', '2025-11-04 23:25:38');
 
 -- --------------------------------------------------------
 
@@ -197,13 +150,6 @@ CREATE TABLE `customers` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `customers`
---
-
-INSERT INTO `customers` (`id`, `name`, `phone`, `address`, `created_at`, `updated_at`) VALUES
-(26, 'jihan kirana putri', '089522822332', 'jalan takat', '2025-08-01 02:12:38', '2025-08-01 02:12:38');
 
 -- --------------------------------------------------------
 
@@ -233,11 +179,21 @@ CREATE TABLE `goods_receipts` (
   `gr_number` varchar(255) NOT NULL,
   `receipt_date` date NOT NULL,
   `received_by` bigint(20) UNSIGNED NOT NULL,
-  `status` varchar(255) NOT NULL DEFAULT 'pending',
+  `status` varchar(255) DEFAULT 'pending',
   `notes` text DEFAULT NULL,
+  `receipt_document` varchar(255) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `goods_receipts`
+--
+
+INSERT INTO `goods_receipts` (`id`, `purchase_order_id`, `gr_number`, `receipt_date`, `received_by`, `status`, `notes`, `receipt_document`, `created_at`, `updated_at`) VALUES
+(24, 30, 'GR-0001/11/2025', '2025-11-07', 12, 'completed', NULL, 'receipts/mjf96QzLhC2qU7lf6DHRGxduBJpXcLNX2X58spzo.jpg', '2025-11-06 18:27:55', '2025-11-06 18:27:55'),
+(25, 32, 'GR-0002/11/2025', '2025-11-07', 12, 'completed', 'k', 'receipts/zbEqkStQMjLVGKyJrxfGvrLrJk4xY4MsXRet5zTc.png', '2025-11-06 19:12:15', '2025-11-06 19:12:15'),
+(26, 31, 'GR-0003/11/2025', '2025-11-07', 12, 'completed', NULL, 'receipts/UnNuluhftJmFeUgnIzLEq4KNUqYcdvdMHK8UxY08.png', '2025-11-06 19:14:25', '2025-11-06 19:14:25');
 
 -- --------------------------------------------------------
 
@@ -248,8 +204,117 @@ CREATE TABLE `goods_receipts` (
 CREATE TABLE `goods_receipt_items` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `goods_receipt_id` bigint(20) UNSIGNED NOT NULL,
+  `item_id` bigint(20) UNSIGNED DEFAULT NULL,
   `product_name` varchar(255) NOT NULL,
+  `unit` varchar(255) DEFAULT NULL,
   `quantity_received` int(11) NOT NULL,
+  `remaining_quantity` int(11) NOT NULL DEFAULT 0,
+  `expiry_date` date DEFAULT NULL,
+  `lot_code` varchar(255) DEFAULT NULL,
+  `batch_number` varchar(255) DEFAULT NULL,
+  `expiry_status` varchar(255) DEFAULT NULL,
+  `notes` text DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `goods_receipt_items`
+--
+
+INSERT INTO `goods_receipt_items` (`id`, `goods_receipt_id`, `item_id`, `product_name`, `unit`, `quantity_received`, `remaining_quantity`, `expiry_date`, `lot_code`, `batch_number`, `expiry_status`, `notes`, `created_at`, `updated_at`) VALUES
+(28, 24, NULL, 'Oasis Air Minum Box of 330 mL', 'box', 10, 0, '2028-10-18', NULL, 'OAS251107001', 'safe', NULL, '2025-11-06 18:27:55', '2025-11-06 18:27:55'),
+(29, 24, NULL, 'Oasis Air Minum Box of 240 mL', 'box', 5, 0, '2028-10-18', NULL, 'OAS251107002', 'safe', NULL, '2025-11-06 18:27:55', '2025-11-06 18:27:55'),
+(30, 24, NULL, 'Oasis Air Minum Box of 600 mL', 'box', 5, 0, '2028-11-16', NULL, 'OAS251107003', 'safe', NULL, '2025-11-06 18:27:55', '2025-11-06 18:27:55'),
+(31, 25, NULL, 'Isi Stapler No. 10 Kangaro', 'pcs', 15, 0, '2029-10-17', NULL, 'ISI251107001', 'safe', NULL, '2025-11-06 19:12:15', '2025-11-06 19:12:15'),
+(32, 25, NULL, 'clip box binder clip 200 joyko', 'pcs', 22, 0, '2028-07-21', NULL, 'CLI251107001', 'safe', NULL, '2025-11-06 19:12:15', '2025-11-06 19:12:15'),
+(33, 25, NULL, 'Pulpen dan Pensil Standard ST 009', 'box', 25, 0, '2028-12-15', NULL, 'PUL251107001', 'safe', NULL, '2025-11-06 19:12:15', '2025-11-06 19:12:15'),
+(34, 26, NULL, 'Cairan Pembersih Lantai Wipol 750ML', 'pcs', 55, 0, '2028-10-19', NULL, 'CAI251107001', 'safe', NULL, '2025-11-06 19:14:25', '2025-11-06 19:14:25'),
+(35, 26, NULL, 'Cairan Pembersih Lantai Porselen Vixal 750M', 'pcs', 55, 0, '2029-07-19', NULL, 'CAI251107002', 'safe', NULL, '2025-11-06 19:14:25', '2025-11-06 19:14:25');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `inventory_batches`
+--
+
+CREATE TABLE `inventory_batches` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `item_id` bigint(20) UNSIGNED NOT NULL,
+  `qty_on_hand` decimal(12,2) NOT NULL,
+  `expiry_date` date DEFAULT NULL,
+  `lot_code` varchar(255) DEFAULT NULL,
+  `unit_cost` decimal(12,2) DEFAULT NULL,
+  `location_code` varchar(255) DEFAULT NULL,
+  `status` enum('active','expired','quarantined') NOT NULL DEFAULT 'active',
+  `last_tx_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `inventory_movements`
+--
+
+CREATE TABLE `inventory_movements` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `goods_receipt_item_id` bigint(20) UNSIGNED NOT NULL,
+  `type` enum('in','out','adjust') NOT NULL,
+  `qty` decimal(12,2) NOT NULL,
+  `ref_type` varchar(255) NOT NULL,
+  `ref_id` varchar(255) NOT NULL,
+  `note` text DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `inventory_movements`
+--
+
+INSERT INTO `inventory_movements` (`id`, `goods_receipt_item_id`, `type`, `qty`, `ref_type`, `ref_id`, `note`, `created_at`, `updated_at`) VALUES
+(10, 28, 'in', 10.00, 'GR', '24', 'Penerimaan barang dari GR #GR-0001/11/2025', '2025-11-06 18:27:55', '2025-11-06 18:27:55'),
+(11, 29, 'in', 5.00, 'GR', '24', 'Penerimaan barang dari GR #GR-0001/11/2025', '2025-11-06 18:27:55', '2025-11-06 18:27:55'),
+(12, 30, 'in', 5.00, 'GR', '24', 'Penerimaan barang dari GR #GR-0001/11/2025', '2025-11-06 18:27:55', '2025-11-06 18:27:55'),
+(13, 31, 'in', 15.00, 'GR', '25', 'Penerimaan barang dari GR #GR-0002/11/2025', '2025-11-06 19:12:15', '2025-11-06 19:12:15'),
+(14, 32, 'in', 22.00, 'GR', '25', 'Penerimaan barang dari GR #GR-0002/11/2025', '2025-11-06 19:12:15', '2025-11-06 19:12:15'),
+(15, 33, 'in', 25.00, 'GR', '25', 'Penerimaan barang dari GR #GR-0002/11/2025', '2025-11-06 19:12:15', '2025-11-06 19:12:15'),
+(16, 34, 'in', 55.00, 'GR', '26', 'Penerimaan barang dari GR #GR-0003/11/2025', '2025-11-06 19:14:25', '2025-11-06 19:14:25'),
+(17, 35, 'in', 55.00, 'GR', '26', 'Penerimaan barang dari GR #GR-0003/11/2025', '2025-11-06 19:14:25', '2025-11-06 19:14:25');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `inventory_records`
+--
+
+CREATE TABLE `inventory_records` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `goods_receipt_id` bigint(20) UNSIGNED NOT NULL,
+  `item_name` varchar(255) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `type` enum('in','out') NOT NULL,
+  `expiry_date` date DEFAULT NULL,
+  `notes` text DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `inventory_settings`
+--
+
+CREATE TABLE `inventory_settings` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `analysis_period` int(11) NOT NULL DEFAULT 30,
+  `fast_moving_threshold` decimal(8,2) NOT NULL DEFAULT 3.00,
+  `slow_moving_threshold` decimal(8,2) NOT NULL DEFAULT 0.50,
+  `lead_time_days` int(11) NOT NULL DEFAULT 5,
+  `safety_stock_days` int(11) NOT NULL DEFAULT 2,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -269,10 +334,20 @@ CREATE TABLE `invoices` (
   `amount` decimal(12,2) NOT NULL,
   `status` varchar(255) NOT NULL DEFAULT 'unpaid',
   `invoice_file` varchar(255) DEFAULT NULL,
+  `payment_proof` varchar(255) DEFAULT NULL,
   `notes` text DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `invoices`
+--
+
+INSERT INTO `invoices` (`id`, `purchase_order_id`, `invoice_number`, `invoice_date`, `due_date`, `amount`, `status`, `invoice_file`, `payment_proof`, `notes`, `created_at`, `updated_at`) VALUES
+(7, 30, '333121123', '2025-11-07', '2025-12-07', 360000.00, 'paid', 'invoices/eWcYvLhYRjn3XFlVFoxaYpewSMKUSvXCRCN7Dupq.jpg', 'payment_proofs/zozQvGeXG8WD1equ9ind8MYQYfesPORG2QHEmUtI.png', NULL, '2025-11-06 18:28:14', '2025-11-06 18:28:14'),
+(8, 32, '33256564', '2025-11-07', '2025-12-07', 1600000.00, 'paid', 'invoices/54Xk6MILWtxuZP5AP74VNUS6T5BjbIFHT2HLX2AI.jpg', 'payment_proofs/dfo9a8JmUPGhoEr2DzBULocqx6VvfIv3dOPGeiRP.jpg', NULL, '2025-11-06 19:12:49', '2025-11-06 19:12:49'),
+(9, 31, '11233', '2025-11-07', '2025-12-07', 825000.00, 'paid', 'invoices/jOflS1gsDLDtzWszq6IaWWTZevlbU8l3rAFYuvlJ.png', 'payment_proofs/onvJFAYApzTd1jlJ1VnUBCrPIF640d9RD14g6Wx1.jpg', NULL, '2025-11-06 19:14:44', '2025-11-06 19:14:44');
 
 -- --------------------------------------------------------
 
@@ -290,17 +365,20 @@ CREATE TABLE `items` (
   `stock` int(11) NOT NULL DEFAULT 0,
   `picture` varchar(255) NOT NULL DEFAULT 'default.png',
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `requires_expiry` tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `items`
 --
 
-INSERT INTO `items` (`id`, `name`, `code`, `category_id`, `cost_price`, `selling_price`, `stock`, `picture`, `created_at`, `updated_at`) VALUES
-(307, 'Mie Goreng Aceh', 'HVDM6240', 21, 2500, 3500, 100, '1761774444.png', '2025-09-04 07:22:55', '2025-10-29 14:47:24'),
-(308, 'Mie Goreng Rendang', 'HXVW4621', 21, 2500, 3500, 20, '1761774466.png', '2025-09-04 07:23:40', '2025-10-29 14:47:46'),
-(309, 'Pilot Pulpen BPT-P Black', 'DNTH6481', 25, 2000, 2500, 200, '1761774482.png', '2025-10-29 13:40:53', '2025-10-29 14:48:02');
+INSERT INTO `items` (`id`, `name`, `code`, `category_id`, `cost_price`, `selling_price`, `stock`, `picture`, `created_at`, `updated_at`, `requires_expiry`) VALUES
+(311, 'Oasis Air Minum 1500 mL', 'BLPP9581', 21, 5000, 7000, 2, '1762468998.png', '2025-11-06 15:43:18', '2025-09-30 14:49:12', 0),
+(312, 'Oasis Air Minum Box of 600 mL', 'DBAT0940', 21, 3000, 4000, 42, '1762485461.png', '2025-11-06 20:17:41', '2025-10-21 14:50:39', 0),
+(313, 'Sunlight Sabun Cuci Piring Sunlight Lime 650ml', 'BMMT0482', 23, 10000, 12000, 48, '1761083578.png', '2025-10-21 14:53:00', '2025-08-21 15:27:50', 0),
+(314, 'Batere ABC Alkaline Uk AAA', 'QPKT9114', 23, 20000, 22000, 97, '1761083638.jpeg', '2025-10-21 14:53:58', '2025-08-21 15:26:16', 0),
+(315, 'Stopmap kertas Folio tipe 5001', 'XNCT8114', 22, 1000, 2000, 164, '1761083666.jpg', '2025-10-21 14:54:26', '2025-08-21 15:25:56', 0);
 
 -- --------------------------------------------------------
 
@@ -375,9 +453,9 @@ CREATE TABLE `marketplace_orders` (
 --
 
 INSERT INTO `marketplace_orders` (`id`, `user_id`, `code`, `status`, `pickup_name`, `phone`, `notes`, `total_price`, `created_at`, `updated_at`) VALUES
-(6, 15, 'PO-ZUMMUDYK', 'completed', 'berlian', '0895701033483', 'ambil jam 1 siang', 21000.00, '2025-09-17 13:37:36', '2025-10-29 09:06:11'),
-(7, 16, 'PO-NCAXTXRA', 'completed', 'abuya', '08957121223', 'ambil jjam 3 sore', 17500.00, '2025-09-19 05:10:09', '2025-10-29 09:06:13'),
-(8, 15, 'PO-ZO43KWRS', 'completed', 'berlian', '0895701033483', 'ambil jam 10', 38500.00, '2025-10-07 04:19:44', '2025-10-29 09:06:08');
+(3, 15, 'PO-E9F2VKG8', 'completed', 'abuya', '123122323221', 'ambil jam 2', 14000.00, '2025-11-06 18:24:46', '2025-11-06 18:26:48'),
+(4, 16, 'PO-EXBKUK7I', 'completed', 'berlian permata suci', '089541064646', 'terima', 28000.00, '2025-11-07 15:48:03', '2025-11-07 16:08:17'),
+(5, 15, 'PO-LTE3QTG4', 'pending_pickup', 'abuya', '9684654416', NULL, 18000.00, '2025-11-07 16:33:13', '2025-11-07 16:33:13');
 
 -- --------------------------------------------------------
 
@@ -400,12 +478,13 @@ CREATE TABLE `marketplace_order_items` (
 --
 
 INSERT INTO `marketplace_order_items` (`id`, `order_id`, `item_id`, `qty`, `price`, `created_at`, `updated_at`) VALUES
-(7, 6, 308, 2, 3500.00, '2025-09-17 13:37:36', '2025-09-17 13:37:36'),
-(8, 6, 307, 4, 3500.00, '2025-09-17 13:37:36', '2025-09-17 13:37:36'),
-(9, 7, 307, 4, 3500.00, '2025-09-19 05:10:09', '2025-09-19 05:10:09'),
-(10, 7, 308, 1, 3500.00, '2025-09-19 05:10:09', '2025-09-19 05:10:09'),
-(11, 8, 308, 7, 3500.00, '2025-10-07 04:19:44', '2025-10-07 04:19:44'),
-(12, 8, 307, 4, 3500.00, '2025-10-07 04:19:44', '2025-10-07 04:19:44');
+(6, 3, 311, 2, 7000.00, '2025-11-06 18:24:46', '2025-11-06 18:24:46'),
+(7, 4, 314, 1, 22000.00, '2025-11-07 15:48:03', '2025-11-07 15:48:03'),
+(8, 4, 315, 1, 2000.00, '2025-11-07 15:48:03', '2025-11-07 15:48:03'),
+(9, 4, 312, 1, 4000.00, '2025-11-07 15:48:03', '2025-11-07 15:48:03'),
+(10, 5, 312, 1, 4000.00, '2025-11-07 16:33:13', '2025-11-07 16:33:13'),
+(11, 5, 315, 1, 2000.00, '2025-11-07 16:33:13', '2025-11-07 16:33:13'),
+(12, 5, 313, 1, 12000.00, '2025-11-07 16:33:13', '2025-11-07 16:33:13');
 
 -- --------------------------------------------------------
 
@@ -436,31 +515,29 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (10, '2024_05_22_030109_create_transactions_table', 1),
 (11, '2024_05_22_030902_create_transaction_details_table', 1),
 (12, '2024_05_27_072011_create_absences_table', 1),
-(13, '2025_07_22_152936_create_purchase_orders_table', 2),
-(14, '2025_07_22_153641_create_purchase_order_items_table', 2),
-(15, '2025_07_23_105030_create_supplier_products_table', 3),
-(16, '2025_07_23_142750_add_item_name_to_purchase_order_items', 4),
-(17, '2025_07_23_144324_create_purchase_orders_table', 5),
-(18, '2025_07_23_144352_create_purchase_order_items_table', 5),
-(19, '2025_07_23_145713_create_purchase_orders_table', 6),
-(20, '2025_07_23_145728_create_purchase_order_items_table', 6),
-(21, '2025_07_24_091800_add_status_and_invoice_to_purchase_orders', 7),
-(22, '2025_07_24_100833_add_created_by_to_purchase_orders_table', 8),
-(23, '2025_09_01_000001_add_online_fields_to_transactions_table', 9),
-(24, '2025_09_03_000000_add_customer_role_and_contact_to_users_table', 10),
-(25, '2025_09_04_000001_create_marketplace_orders_table', 11),
-(26, '2025_09_04_000002_create_marketplace_order_items_table', 11),
-(27, '2025_07_23_145729_add_item_name_to_purchase_order_items', 12),
-(28, '2025_10_08_010229_add_online_fields_to_transactions_table', 12),
-(29, '2025_10_13_000001_create_purchase_requests_table', 12),
-(30, '2025_10_13_000002_create_purchase_request_items_table', 12),
-(31, '2025_10_13_000003_add_purchase_request_id_and_fields_to_purchase_orders_table', 12),
-(32, '2025_10_13_000004_create_goods_receipts_table', 12),
-(33, '2025_10_13_000005_create_goods_receipt_items_table', 12),
-(34, '2025_10_13_000006_create_invoices_table', 12),
-(35, '2025_10_23_000001_add_unit_and_current_stock_to_purchase_request_items', 13),
-(36, '2025_10_23_000005_add_fields_to_purchase_order_items', 14),
-(37, '2025_10_23_000007_add_required_columns_to_purchase_orders_and_items', 15);
+(13, '2024_10_28_000001_create_inventory_settings_table', 1),
+(14, '2024_10_28_000002_create_stock_movement_analyses_table', 1),
+(15, '2024_10_28_000003_create_sessions_table', 1),
+(16, '2025_07_23_105030_create_supplier_products_table', 1),
+(17, '2025_07_23_145713_create_purchase_orders_table', 1),
+(18, '2025_07_23_145728_create_purchase_order_items_table', 1),
+(19, '2025_09_03_000000_add_customer_role_and_contact_to_users_table', 1),
+(20, '2025_09_04_000001_create_marketplace_orders_table', 1),
+(21, '2025_09_04_000002_create_marketplace_order_items_table', 1),
+(22, '2025_10_08_010229_add_online_fields_to_transactions_table', 1),
+(23, '2025_10_13_000001_create_purchase_requests_table', 1),
+(24, '2025_10_13_000002_create_purchase_request_items_table', 1),
+(25, '2025_10_13_000004_create_goods_receipts_table', 1),
+(26, '2025_10_13_000005_create_goods_receipt_items_table', 1),
+(27, '2025_10_13_000006_create_invoices_table', 1),
+(28, '2025_10_23_000007_add_required_columns_to_purchase_orders_and_items', 1),
+(29, '2025_10_23_000008_make_purchase_order_items_item_id_nullable', 1),
+(30, '2025_10_27_000001_add_username_and_picture_to_users', 1),
+(31, '2025_11_05_234144_remove_unused_columns_from_goods_receipts', 2),
+(32, '2025_11_05_234855_create_inventory_records_table', 3),
+(33, '2025_11_06_000001_add_expiry_columns_to_goods_receipt_items', 4),
+(34, '0001_01_01_000000_create_items_table', 5),
+(35, '2025_11_07_232719_create_cart_items_table', 6);
 
 -- --------------------------------------------------------
 
@@ -481,14 +558,14 @@ CREATE TABLE `payment_methods` (
 --
 
 INSERT INTO `payment_methods` (`id`, `name`, `description`, `created_at`, `updated_at`) VALUES
-(1, 'Tunai', NULL, '2025-01-19 06:28:45', '2025-01-19 06:28:45'),
-(2, 'Debit', NULL, '2025-01-19 06:28:45', '2025-01-19 06:28:45'),
-(3, 'Kredit', NULL, '2025-01-19 06:28:45', '2025-01-19 06:28:45'),
-(4, 'Transfer', NULL, '2025-01-19 06:28:45', '2025-01-19 06:28:45'),
-(5, 'OVO', NULL, '2025-01-19 06:28:45', '2025-01-19 06:28:45'),
-(6, 'GoPay', NULL, '2025-01-19 06:28:45', '2025-01-19 06:28:45'),
-(7, 'Dana', NULL, '2025-01-19 06:28:45', '2025-01-19 06:28:45'),
-(8, 'QRIS', NULL, '2025-01-19 06:28:45', '2025-01-19 06:28:45');
+(1, 'Tunai', NULL, '2025-11-03 19:01:38', '2025-11-03 19:01:38'),
+(2, 'Debit', NULL, '2025-11-03 19:01:38', '2025-11-03 19:01:38'),
+(3, 'Kredit', NULL, '2025-11-03 19:01:38', '2025-11-03 19:01:38'),
+(4, 'Transfer', NULL, '2025-11-03 19:01:38', '2025-11-03 19:01:38'),
+(5, 'OVO', NULL, '2025-11-03 19:01:38', '2025-11-03 19:01:38'),
+(6, 'GoPay', NULL, '2025-11-03 19:01:38', '2025-11-03 19:01:38'),
+(7, 'Dana', NULL, '2025-11-03 19:01:38', '2025-11-03 19:01:38'),
+(8, 'QRIS', NULL, '2025-11-03 19:01:38', '2025-11-03 19:01:38');
 
 -- --------------------------------------------------------
 
@@ -500,17 +577,28 @@ CREATE TABLE `purchase_orders` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `po_number` varchar(255) NOT NULL,
   `supplier_id` bigint(20) UNSIGNED NOT NULL,
-  `created_by` bigint(20) UNSIGNED DEFAULT NULL,
+  `purchase_request_id` bigint(20) UNSIGNED DEFAULT NULL,
   `po_date` date NOT NULL,
-  `total_amount` decimal(12,2) DEFAULT NULL,
-  `status` enum('draft','validated','received') NOT NULL DEFAULT 'draft',
+  `status` varchar(255) NOT NULL DEFAULT 'draft',
+  `total_amount` decimal(12,2) NOT NULL DEFAULT 0.00,
   `supplier_confirmed` tinyint(1) NOT NULL DEFAULT 0,
   `supplier_notes` text DEFAULT NULL,
   `invoice_image_path` varchar(255) DEFAULT NULL,
+  `created_by` bigint(20) UNSIGNED DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
-  `purchase_request_id` bigint(20) UNSIGNED DEFAULT NULL
+  `prices_confirmed` tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `purchase_orders`
+--
+
+INSERT INTO `purchase_orders` (`id`, `po_number`, `supplier_id`, `purchase_request_id`, `po_date`, `status`, `total_amount`, `supplier_confirmed`, `supplier_notes`, `invoice_image_path`, `created_by`, `created_at`, `updated_at`, `prices_confirmed`) VALUES
+(30, 'PO/2025/11/0001', 26, 25, '2025-11-07', 'completed', 360000.00, 0, NULL, NULL, 12, '2025-11-06 17:09:57', '2025-11-06 18:28:14', 1),
+(31, 'PO/2025/11/0002', 27, 27, '2025-11-07', 'completed', 825000.00, 0, NULL, NULL, 12, '2025-11-06 19:10:37', '2025-11-06 19:14:44', 1),
+(32, 'PO/2025/11/0003', 29, 26, '2025-11-07', 'completed', 1600000.00, 0, NULL, NULL, 12, '2025-11-06 19:10:58', '2025-11-06 19:12:49', 1),
+(33, 'PO/2025/11/0004', 28, 29, '2025-11-07', 'sent', 800000.00, 0, NULL, NULL, 12, '2025-11-06 20:34:08', '2025-11-06 20:34:36', 1);
 
 -- --------------------------------------------------------
 
@@ -521,7 +609,7 @@ CREATE TABLE `purchase_orders` (
 CREATE TABLE `purchase_order_items` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `purchase_order_id` bigint(20) UNSIGNED NOT NULL,
-  `item_name` varchar(255) NOT NULL,
+  `item_id` bigint(20) UNSIGNED DEFAULT NULL,
   `product_name` varchar(255) NOT NULL,
   `quantity` int(11) NOT NULL,
   `unit` varchar(255) DEFAULT NULL,
@@ -531,6 +619,23 @@ CREATE TABLE `purchase_order_items` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `purchase_order_items`
+--
+
+INSERT INTO `purchase_order_items` (`id`, `purchase_order_id`, `item_id`, `product_name`, `quantity`, `unit`, `unit_price`, `notes`, `created_at`, `updated_at`) VALUES
+(74, 30, NULL, 'Oasis Air Minum Box of 330 mL', 10, 'box', 15000.00, NULL, '2025-11-06 17:09:57', '2025-11-06 17:10:32'),
+(75, 30, NULL, 'Oasis Air Minum Box of 240 mL', 5, 'box', 17000.00, NULL, '2025-11-06 17:09:57', '2025-11-06 17:10:32'),
+(76, 30, NULL, 'Oasis Air Minum Box of 600 mL', 5, 'box', 25000.00, NULL, '2025-11-06 17:09:57', '2025-11-06 17:10:32'),
+(77, 31, NULL, 'Cairan Pembersih Lantai Wipol 750ML', 55, 'pcs', 7000.00, NULL, '2025-11-06 19:10:37', '2025-11-06 19:14:02'),
+(78, 31, NULL, 'Cairan Pembersih Lantai Porselen Vixal 750M', 55, 'pcs', 8000.00, NULL, '2025-11-06 19:10:37', '2025-11-06 19:14:02'),
+(79, 32, NULL, 'Isi Stapler No. 10 Kangaro', 15, 'pcs', 20000.00, NULL, '2025-11-06 19:10:58', '2025-11-06 19:11:40'),
+(80, 32, NULL, 'clip box binder clip 200 joyko', 22, 'pcs', 25000.00, NULL, '2025-11-06 19:10:58', '2025-11-06 19:11:40'),
+(81, 32, NULL, 'Pulpen dan Pensil Standard ST 009', 25, 'box', 30000.00, NULL, '2025-11-06 19:10:58', '2025-11-06 19:11:40'),
+(82, 33, NULL, 'Batere ABC Alkaline Uk AA', 20, 'pcs', 15000.00, NULL, '2025-11-06 20:34:08', '2025-11-06 20:34:30'),
+(83, 33, NULL, 'Batere ABC Alkaline Uk AAA', 20, 'box', 20000.00, NULL, '2025-11-06 20:34:08', '2025-11-06 20:34:30'),
+(84, 33, NULL, 'Post It Sign Here (Arrow) Tom dan Jerry', 10, 'box', 10000.00, NULL, '2025-11-06 20:34:08', '2025-11-06 20:34:30');
 
 -- --------------------------------------------------------
 
@@ -543,7 +648,15 @@ CREATE TABLE `purchase_requests` (
   `pr_number` varchar(255) NOT NULL,
   `requested_by` bigint(20) UNSIGNED NOT NULL,
   `request_date` date NOT NULL,
+  `supplier_id` bigint(20) UNSIGNED NOT NULL,
   `status` varchar(255) NOT NULL DEFAULT 'pending',
+  `approved_by` bigint(20) UNSIGNED DEFAULT NULL,
+  `approved_at` timestamp NULL DEFAULT NULL,
+  `approval_status` varchar(255) NOT NULL DEFAULT 'pending',
+  `approval_notes` text DEFAULT NULL,
+  `rejection_reason` text DEFAULT NULL,
+  `validation_document_path` varchar(255) DEFAULT NULL,
+  `is_validated` tinyint(1) NOT NULL DEFAULT 0,
   `description` text DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -553,9 +666,11 @@ CREATE TABLE `purchase_requests` (
 -- Dumping data for table `purchase_requests`
 --
 
-INSERT INTO `purchase_requests` (`id`, `pr_number`, `requested_by`, `request_date`, `status`, `description`, `created_at`, `updated_at`) VALUES
-(2, 'PR-0001/10/2025', 12, '2025-10-23', 'approved', NULL, '2025-10-22 10:50:30', '2025-10-22 10:50:56'),
-(3, 'PR-0002/10/2025', 12, '2025-10-23', 'approved', NULL, '2025-10-22 11:00:02', '2025-10-22 11:00:06');
+INSERT INTO `purchase_requests` (`id`, `pr_number`, `requested_by`, `request_date`, `supplier_id`, `status`, `approved_by`, `approved_at`, `approval_status`, `approval_notes`, `rejection_reason`, `validation_document_path`, `is_validated`, `description`, `created_at`, `updated_at`) VALUES
+(25, 'PR-0001/11/2025', 12, '2025-11-07', 26, 'po_created', 12, '2025-11-06 17:09:54', 'approved', NULL, NULL, NULL, 0, NULL, '2025-11-06 17:09:46', '2025-11-06 17:09:57'),
+(26, 'PR-0002/11/2025', 12, '2025-11-07', 29, 'po_created', 12, '2025-11-06 19:10:34', 'approved', NULL, NULL, NULL, 0, NULL, '2025-11-06 19:09:01', '2025-11-06 19:10:58'),
+(27, 'PR-0003/11/2025', 12, '2025-11-07', 27, 'po_created', 12, '2025-11-06 19:10:25', 'approved', NULL, NULL, NULL, 0, NULL, '2025-11-06 19:09:21', '2025-11-06 19:10:37'),
+(29, 'PR-0004/11/2025', 12, '2025-11-07', 28, 'po_created', 12, '2025-11-06 20:34:04', 'approved', NULL, NULL, NULL, 0, NULL, '2025-11-06 20:33:57', '2025-11-06 20:34:08');
 
 -- --------------------------------------------------------
 
@@ -568,8 +683,8 @@ CREATE TABLE `purchase_request_items` (
   `purchase_request_id` bigint(20) UNSIGNED NOT NULL,
   `product_name` varchar(255) NOT NULL,
   `quantity` int(11) NOT NULL,
-  `unit` varchar(255) DEFAULT NULL,
-  `current_stock` int(11) NOT NULL DEFAULT 0,
+  `unit` varchar(255) DEFAULT 'pcs',
+  `current_stock` int(11) DEFAULT 0,
   `notes` text DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -580,11 +695,17 @@ CREATE TABLE `purchase_request_items` (
 --
 
 INSERT INTO `purchase_request_items` (`id`, `purchase_request_id`, `product_name`, `quantity`, `unit`, `current_stock`, `notes`, `created_at`, `updated_at`) VALUES
-(1, 2, 'Mie Goreng Aceh', 50, 'pcs', 0, NULL, '2025-10-22 10:50:30', '2025-10-22 10:50:30'),
-(2, 2, 'Mie Goreng Rendang', 50, 'pcs', 0, NULL, '2025-10-22 10:50:30', '2025-10-22 10:50:30'),
-(3, 2, 'Kecap ABC manis', 10, 'pcs', 0, NULL, '2025-10-22 10:50:30', '2025-10-22 10:50:30'),
-(4, 3, 'Saus ABC 500ML', 100, 'pcs', 0, NULL, '2025-10-22 11:00:02', '2025-10-22 11:00:02'),
-(5, 3, 'Kecap ABC 750ML', 100, 'pcs', 0, NULL, '2025-10-22 11:00:02', '2025-10-22 11:00:02');
+(60, 25, 'Oasis Air Minum Box of 330 mL', 10, 'box', 0, NULL, '2025-11-06 17:09:46', '2025-11-06 17:09:46'),
+(61, 25, 'Oasis Air Minum Box of 240 mL', 5, 'box', 0, NULL, '2025-11-06 17:09:46', '2025-11-06 17:09:46'),
+(62, 25, 'Oasis Air Minum Box of 600 mL', 5, 'box', 0, NULL, '2025-11-06 17:09:46', '2025-11-06 17:09:46'),
+(63, 26, 'Isi Stapler No. 10 Kangaro', 15, 'pcs', 0, NULL, '2025-11-06 19:09:01', '2025-11-06 19:09:01'),
+(64, 26, 'clip box binder clip 200 joyko', 22, 'pcs', 0, NULL, '2025-11-06 19:09:01', '2025-11-06 19:09:01'),
+(65, 26, 'Pulpen dan Pensil Standard ST 009', 25, 'box', 0, NULL, '2025-11-06 19:09:01', '2025-11-06 19:09:01'),
+(66, 27, 'Cairan Pembersih Lantai Wipol 750ML', 55, 'pcs', 0, NULL, '2025-11-06 19:09:21', '2025-11-06 19:09:21'),
+(67, 27, 'Cairan Pembersih Lantai Porselen Vixal 750M', 55, 'pcs', 0, NULL, '2025-11-06 19:09:21', '2025-11-06 19:09:21'),
+(70, 29, 'Batere ABC Alkaline Uk AA', 20, 'pcs', 0, NULL, '2025-11-06 20:33:57', '2025-11-06 20:33:57'),
+(71, 29, 'Batere ABC Alkaline Uk AAA', 20, 'box', 0, NULL, '2025-11-06 20:33:57', '2025-11-06 20:33:57'),
+(72, 29, 'Post It Sign Here (Arrow) Tom dan Jerry', 10, 'box', 0, NULL, '2025-11-06 20:33:57', '2025-11-06 20:33:57');
 
 -- --------------------------------------------------------
 
@@ -597,7 +718,7 @@ CREATE TABLE `sessions` (
   `user_id` bigint(20) UNSIGNED DEFAULT NULL,
   `ip_address` varchar(45) DEFAULT NULL,
   `user_agent` text DEFAULT NULL,
-  `payload` longtext NOT NULL,
+  `payload` text NOT NULL,
   `last_activity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -606,9 +727,32 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('P5YKC9pHeGSG9kvn8kadUxAN4OePx6nZHavVIGyk', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiWlJxSllyckxsbXhBNWVIcUdGYkVjRFBtSUgxZVBlNFhBNmRyYVpuRyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MTp7czo4OiJpbnRlbmRlZCI7czoyMToiaHR0cDovLzEyNy4wLjAuMTo4MDAwIjt9czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fXM6MjI6IlBIUERFQlVHQkFSX1NUQUNLX0RBVEEiO2E6MDp7fX0=', 1761781008),
-('U7THZMyfg1gpEp7Ndd7NA8TlMgfHC9ayxzOBJPsL', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoic2V3S2Z1aDdKVnVSSWNXV084TkhTRUhwT3N4alRXNUp6dFN5NkxCNCI7czoyMjoiUEhQREVCVUdCQVJfU1RBQ0tfREFUQSI7YToxOntzOjI2OiIwMUs4UlZQWlFIQTVaTjMzUUdNWEI4MFE4NCI7Tjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1761770962),
-('VF4fI68k5aynZoytAYjPEWNYlSfaN1EKzJZxBlVD', 13, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiMVhSZ3VXNXQwZFBPcklNeDNuQ1RNSGl2OVo5aDhIQmFodEJpMGdaUSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9jdXN0b21lci9yZWdpc3RlciI7fXM6MjI6IlBIUERFQlVHQkFSX1NUQUNLX0RBVEEiO2E6MTp7czoyNjoiMDFLOFMzUlI1SFZCVEM0WkY0TTMxWFRBVFEiO047fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjEzO30=', 1761779409);
+('BpbJdFYL5RKQTKbC5jO68LB041lBL0sGrz1Fci4p', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiSGtyb25VWDd6YkZheTRQVTZsb0Jac1Jac1ppS3g5dGVyemw4NWNJaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzY6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9jdXN0b21lci9sb2dpbiI7fX0=', 1762558793),
+('rSOPa8q39mAe6WCS1tTUnZLxA6ellJdZqIys1eXh', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'YToyOntzOjY6Il90b2tlbiI7czo0MDoiZVFzQzVlajZqdjRrdmQyQlRlZFNadnR6ZTI0V0luZnNFcXhFZlVSSSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1762554881);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `stock_movement_analyses`
+--
+
+CREATE TABLE `stock_movement_analyses` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `item_id` bigint(20) UNSIGNED NOT NULL,
+  `total_sold_30_days` int(11) NOT NULL DEFAULT 0,
+  `avg_daily_sales` decimal(8,2) NOT NULL DEFAULT 0.00,
+  `movement_status` enum('FAST','NORMAL','SLOW') NOT NULL DEFAULT 'NORMAL',
+  `current_stock` int(11) NOT NULL DEFAULT 0,
+  `days_until_empty` int(11) DEFAULT NULL,
+  `non_moving_days` int(11) NOT NULL DEFAULT 0,
+  `stuck_stock_value` decimal(15,2) NOT NULL DEFAULT 0.00,
+  `recommendation` varchar(255) DEFAULT NULL,
+  `suggested_reorder_qty` int(11) DEFAULT NULL,
+  `last_sale_date` timestamp NULL DEFAULT NULL,
+  `last_analysis_date` timestamp NOT NULL DEFAULT current_timestamp(),
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -632,9 +776,10 @@ CREATE TABLE `suppliers` (
 --
 
 INSERT INTO `suppliers` (`id`, `name`, `phone`, `address`, `email`, `description`, `created_at`, `updated_at`) VALUES
-(29, 'PT. INDOFOOD MACANEGARA', '082823232323', 'JAKABARING', 'INDOFOOD@GMAIL.COM', 'pesan akan di antar', '2025-09-04 07:20:09', '2025-09-04 07:20:09'),
-(30, 'PT. LAMACAWW', '0123828833', 'JAKARTA', 'MACAWW@GMAIL.COM', 'pesanan akan di antar', '2025-09-04 07:21:35', '2025-09-04 07:21:35'),
-(31, 'PT. INDOMARGA SEJAJHTERA', '123123123', 'jalan antasassri', 'maragafood@gmail.com', 'barang di pesan secara langsung dan diantar oleh pihak supplier', '2025-10-07 13:40:20', '2025-10-07 13:40:20');
+(26, 'PT. Oasis Waters International', '0711432446', 'Jl. Kantor Lurah Lorong Anggrek RT 21 RW 04 Sukomoro Km. 18, Lawang Kidul, Kec. Ilir Tim. II, Kab. Banyuasin, Sumatera Selatan 30961', NULL, 'Pemesanan Barang Melalui Website resmi https://id1908657-pt-oasis-waters-international.contact.page/#google_vignette', '2025-11-04 23:28:32', '2025-11-04 23:28:32'),
+(27, 'PT. Delta Muster Rise', '08125523455', 'Jl. Pangeran Ayin Komp. Sako Permai Blok E No. 5, Kel. Sako Baru Palembang, Sumatera Selatan, Indonesia', NULL, 'Barang di pesan Melalui website https://www.indotrading.com/deltamusterrise', '2025-11-04 23:32:33', '2025-11-04 23:32:57'),
+(28, 'PT. Surya Vesakha Pamungkas', '0892444434544', 'Jl. Sei Itam No. 77 Kelurahan Bukit Lama Kecamatan Ilir Barat I Palembang, Sumatera Selatan, Indonesia', NULL, 'Produk dipesan melalui website resmi https://www.indotrading.com/suryavesakhapamungkas', '2025-11-04 23:42:45', '2025-11-04 23:42:45'),
+(29, 'CV. Dempo Center', '089232555222', 'Jl. Sultan M Mansyur Toko Dempo Laundry, Bukit Lama, Ilir Barat 1, Kota palembang, Palembang, Sumatera Selatan', NULL, 'Produk dipesan melalui website resmi https://www.indotrading.com/dempocenter', '2025-11-04 23:47:54', '2025-11-04 23:47:54');
 
 -- --------------------------------------------------------
 
@@ -645,7 +790,11 @@ INSERT INTO `suppliers` (`id`, `name`, `phone`, `address`, `email`, `description
 CREATE TABLE `supplier_products` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `supplier_id` bigint(20) UNSIGNED NOT NULL,
+  `item_id` bigint(20) UNSIGNED DEFAULT NULL,
   `product_name` varchar(255) NOT NULL,
+  `price` decimal(10,2) DEFAULT NULL,
+  `min_order` int(11) NOT NULL DEFAULT 1,
+  `lead_time` int(11) DEFAULT NULL COMMENT 'Lead time in days',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -654,14 +803,31 @@ CREATE TABLE `supplier_products` (
 -- Dumping data for table `supplier_products`
 --
 
-INSERT INTO `supplier_products` (`id`, `supplier_id`, `product_name`, `created_at`, `updated_at`) VALUES
-(12, 29, 'Mie Goreng Aceh', '2025-09-04 07:20:09', '2025-09-04 07:20:09'),
-(13, 29, 'Mie Goreng Rendang', '2025-09-04 07:20:09', '2025-09-04 07:20:09'),
-(14, 29, 'Kecap ABC manis', '2025-09-04 07:20:09', '2025-09-04 07:20:09'),
-(15, 30, 'Mineral Akuzu', '2025-09-04 07:21:35', '2025-09-04 07:21:35'),
-(16, 30, 'Tisu Medic', '2025-09-04 07:21:35', '2025-09-04 07:21:35'),
-(17, 31, 'Saus ABC 500ML', '2025-10-07 13:40:20', '2025-10-07 13:40:20'),
-(18, 31, 'Kecap ABC 750ML', '2025-10-07 13:40:20', '2025-10-07 13:40:20');
+INSERT INTO `supplier_products` (`id`, `supplier_id`, `item_id`, `product_name`, `price`, `min_order`, `lead_time`, `created_at`, `updated_at`) VALUES
+(1, 26, NULL, 'Oasis Air Minum 240 mL', NULL, 1, NULL, '2025-11-04 23:28:32', '2025-11-04 23:28:32'),
+(2, 26, NULL, 'Oasis Air Minum 300 mL', NULL, 1, NULL, '2025-11-04 23:28:32', '2025-11-04 23:28:32'),
+(3, 26, NULL, 'Oasis Air Minum 600 mL', NULL, 1, NULL, '2025-11-04 23:28:32', '2025-11-04 23:28:32'),
+(4, 26, NULL, 'Oasis Air Minum 1500 mL', NULL, 1, NULL, '2025-11-04 23:28:32', '2025-11-04 23:28:32'),
+(5, 26, NULL, 'Oasis Air Minum Box of 330 mL', NULL, 1, NULL, '2025-11-04 23:28:32', '2025-11-04 23:28:32'),
+(6, 26, NULL, 'Oasis Air Minum Box of 240 mL', NULL, 1, NULL, '2025-11-04 23:28:32', '2025-11-04 23:28:32'),
+(7, 26, NULL, 'Oasis Air Minum Box of 600 mL', NULL, 1, NULL, '2025-11-04 23:28:32', '2025-11-04 23:28:32'),
+(8, 26, NULL, 'Oasis Air Minum Box of 1500 mL', NULL, 1, NULL, '2025-11-04 23:28:32', '2025-11-04 23:28:32'),
+(12, 27, NULL, 'Cairan Pembersih Lantai Porselen Vixal 750M', NULL, 1, NULL, '2025-11-04 23:33:35', '2025-11-04 23:33:35'),
+(13, 27, NULL, 'Cairan Pembersih Lantai Wipol 750ML', NULL, 1, NULL, '2025-11-04 23:33:35', '2025-11-04 23:33:35'),
+(14, 27, NULL, 'Sunlight Sabun Cuci Piring Sunlight Lime 650ml', NULL, 1, NULL, '2025-11-04 23:33:35', '2025-11-04 23:33:35'),
+(15, 28, NULL, 'Post It Sign Here (Arrow) Tom dan Jerry', NULL, 1, NULL, '2025-11-04 23:42:45', '2025-11-04 23:42:45'),
+(16, 28, NULL, 'Stopmap Folio Diamond Tipe 5002', NULL, 1, NULL, '2025-11-04 23:42:45', '2025-11-04 23:42:45'),
+(17, 28, NULL, 'Pensil 2B Faber Castell 1 Pack', NULL, 1, NULL, '2025-11-04 23:42:45', '2025-11-04 23:42:45'),
+(18, 28, NULL, 'Ballpoint K-1 Kenko 1 Pack', NULL, 1, NULL, '2025-11-04 23:42:45', '2025-11-04 23:42:45'),
+(19, 28, NULL, 'Batere ABC Alkaline Uk AAA', NULL, 1, NULL, '2025-11-04 23:42:45', '2025-11-04 23:42:45'),
+(20, 28, NULL, 'Batere ABC Alkaline Uk AA', NULL, 1, NULL, '2025-11-04 23:42:45', '2025-11-04 23:42:45'),
+(21, 28, NULL, 'Stopmap kertas Folio tipe 5001', NULL, 1, NULL, '2025-11-04 23:42:45', '2025-11-04 23:42:45'),
+(22, 28, NULL, 'Binder Clips Tipe 105 Kenko', NULL, 1, NULL, '2025-11-04 23:42:45', '2025-11-04 23:42:45'),
+(33, 29, NULL, 'Note BANTEX FLEXI TAB 5 NEON COLOUR', NULL, 1, NULL, '2025-11-07 14:01:24', '2025-11-07 14:01:24'),
+(34, 29, NULL, 'Lem Stick UHU 8 ram', NULL, 1, NULL, '2025-11-07 14:01:24', '2025-11-07 14:01:24'),
+(35, 29, NULL, 'Lem Stick UHU 21 gram', NULL, 1, NULL, '2025-11-07 14:01:24', '2025-11-07 14:01:24'),
+(36, 29, NULL, 'penghapus faber castell Putih KECIL 1872', NULL, 1, NULL, '2025-11-07 14:01:24', '2025-11-07 14:01:24'),
+(37, 29, NULL, 'Spidol dan Highlighter spidol whiteboard snowman', NULL, 1, NULL, '2025-11-07 14:01:24', '2025-11-07 14:01:24');
 
 -- --------------------------------------------------------
 
@@ -672,20 +838,19 @@ INSERT INTO `supplier_products` (`id`, `supplier_id`, `product_name`, `created_a
 CREATE TABLE `transactions` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `user_id` bigint(20) UNSIGNED NOT NULL,
-  `channel` enum('pos','online') NOT NULL DEFAULT 'pos',
-  `payment_status` enum('unpaid','paid','canceled') NOT NULL DEFAULT 'unpaid',
-  `pickup_status` enum('waiting','ready','picked_up','canceled') NOT NULL DEFAULT 'waiting',
-  `pickup_code` varchar(20) DEFAULT NULL,
-  `pickup_deadline` datetime DEFAULT NULL,
   `customer_id` bigint(20) UNSIGNED DEFAULT NULL,
   `invoice` varchar(255) NOT NULL,
   `invoice_no` varchar(255) NOT NULL,
   `total` int(11) NOT NULL,
   `discount` int(11) NOT NULL DEFAULT 0,
   `payment_method_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `channel` varchar(255) DEFAULT NULL,
   `amount` int(11) DEFAULT NULL,
   `change` int(11) NOT NULL DEFAULT 0,
   `status` enum('paid','debt') NOT NULL DEFAULT 'paid',
+  `payment_status` varchar(255) DEFAULT NULL,
+  `pickup_status` varchar(255) DEFAULT NULL,
+  `pickup_code` varchar(255) DEFAULT NULL,
   `note` text DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -695,15 +860,23 @@ CREATE TABLE `transactions` (
 -- Dumping data for table `transactions`
 --
 
-INSERT INTO `transactions` (`id`, `user_id`, `channel`, `payment_status`, `pickup_status`, `pickup_code`, `pickup_deadline`, `customer_id`, `invoice`, `invoice_no`, `total`, `discount`, `payment_method_id`, `amount`, `change`, `status`, `note`, `created_at`, `updated_at`) VALUES
-(7, 12, 'pos', 'unpaid', 'waiting', NULL, NULL, NULL, '1709250001', '1', 31500, 0, 1, 31500, 0, 'paid', '(diproses: syafiq Muhammad Alif, 17/09/2025 21:07)', '2025-09-17 14:07:03', '2025-09-17 14:07:03'),
-(8, 12, 'pos', 'unpaid', 'waiting', NULL, NULL, NULL, '1909250001', '1', 3500, 0, 1, 3500, 0, 'paid', '(diproses: syafiq Muhammad Alif, 19/09/2025 12:22)', '2025-09-19 05:22:55', '2025-09-19 05:22:55'),
-(9, 12, 'pos', 'unpaid', 'waiting', NULL, NULL, NULL, '0710250001', '1', 24500, 0, 1, 24500, 0, 'paid', '(diproses: syafiq Muhammad Alif, 07/10/2025 11:47)', '2025-10-07 04:47:52', '2025-10-07 04:47:53'),
-(10, 12, 'online', 'paid', 'picked_up', 'PO-ZO43KWRS', NULL, NULL, '2910250001', '1', 38500, 0, 1, 38500, 0, 'paid', 'Marketplace pickup: berlian (0895701033483)', '2025-10-29 09:06:08', '2025-10-29 09:06:08'),
-(11, 12, 'online', 'paid', 'picked_up', 'PO-ZUMMUDYK', NULL, NULL, '2910250002', '2', 21000, 0, 1, 21000, 0, 'paid', 'Marketplace pickup: berlian (0895701033483)', '2025-10-29 09:06:11', '2025-10-29 09:06:11'),
-(12, 12, 'online', 'paid', 'picked_up', 'PO-NCAXTXRA', NULL, NULL, '2910250003', '3', 17500, 0, 1, 17500, 0, 'paid', 'Marketplace pickup: abuya (08957121223)', '2025-10-29 09:06:13', '2025-10-29 09:06:13'),
-(13, 12, 'pos', 'unpaid', 'waiting', NULL, NULL, NULL, '2910250004', '4', 336000, 0, 1, 336000, 0, 'paid', '(diproses: syafiq Muhammad Alif, 29/10/2025 20:12)', '2025-10-29 13:12:32', '2025-10-29 13:12:33'),
-(14, 12, 'pos', 'unpaid', 'waiting', NULL, NULL, NULL, '2910250005', '5', 875000, 0, 1, 875000, 0, 'paid', '(diproses: syafiq Muhammad Alif, 29/10/2025 20:15)', '2025-10-29 13:15:25', '2025-10-29 13:15:25');
+INSERT INTO `transactions` (`id`, `user_id`, `customer_id`, `invoice`, `invoice_no`, `total`, `discount`, `payment_method_id`, `channel`, `amount`, `change`, `status`, `payment_status`, `pickup_status`, `pickup_code`, `note`, `created_at`, `updated_at`) VALUES
+(19, 12, NULL, '0711250001', '1', 105000, 0, 1, NULL, 105000, 0, 'paid', NULL, NULL, NULL, '(diproses: syafiq Muhammad Alif, 07/11/2025 00:06)', '2025-11-06 17:06:29', '2025-11-06 17:06:29'),
+(22, 12, NULL, '0711250002', '2', 105000, 0, 1, NULL, 105000, 0, 'paid', NULL, NULL, NULL, '(diproses: syafiq Muhammad Alif, 07/11/2025 01:21)', '2025-11-06 18:21:10', '2025-11-06 18:21:11'),
+(23, 14, NULL, '0711250003', '3', 14000, 0, 1, 'online', 14000, 0, 'paid', 'paid', 'picked_up', 'PO-E9F2VKG8', 'Marketplace pickup: abuya (123122323221)', '2025-11-06 18:26:48', '2025-11-06 18:26:48'),
+(24, 12, NULL, '0711250004', '4', 184000, 0, 7, NULL, 184000, 0, 'paid', NULL, NULL, NULL, '(diproses: syafiq Muhammad Alif, 07/11/2025 03:24)', '2025-11-06 20:24:24', '2025-11-06 20:24:24'),
+(25, 12, NULL, '0711250005', '5', 60000, 0, 1, NULL, 60000, 0, 'paid', NULL, NULL, NULL, '(diproses: syafiq Muhammad Alif, 07/11/2025 21:04)', '2025-11-07 14:04:52', '2025-11-07 14:04:52'),
+(28, 12, NULL, '0711250006', '6', 34000, 0, 1, NULL, 34000, 0, 'paid', NULL, NULL, NULL, '(diproses: syafiq Muhammad Alif, 07/11/2025 21:27)', '2025-11-07 14:27:13', '2025-11-07 14:27:13'),
+(29, 12, NULL, '0711250007', '7', 15000, 0, 7, NULL, 15000, 0, 'paid', NULL, NULL, NULL, '(diproses: syafiq Muhammad Alif, 07/11/2025 21:40)', '2025-11-07 14:40:57', '2025-11-07 14:40:57'),
+(30, 12, NULL, '3009250001', '1', 23000, 0, 7, NULL, 23000, 0, 'paid', NULL, NULL, NULL, '(diproses: syafiq Muhammad Alif, 30/09/2025 21:49)', '2025-09-30 14:49:12', '2025-09-30 14:49:12'),
+(31, 12, NULL, '2110250001', '1', 20000, 0, 7, NULL, 20000, 0, 'paid', NULL, NULL, NULL, '(diproses: syafiq Muhammad Alif, 21/10/2025 21:50)', '2025-10-21 14:50:39', '2025-10-21 14:50:40'),
+(32, 12, NULL, '2110250002', '2', 60000, 0, 7, NULL, 60000, 0, 'paid', NULL, NULL, NULL, '(diproses: syafiq Muhammad Alif, 21/10/2025 21:54)', '2025-10-21 14:54:54', '2025-10-21 14:54:54'),
+(33, 12, NULL, '2108250001', '1', 22000, 0, 7, NULL, 22000, 0, 'paid', NULL, NULL, NULL, '(diproses: syafiq Muhammad Alif, 21/08/2025 22:25)', '2025-08-21 15:25:05', '2025-08-21 15:25:05'),
+(34, 12, NULL, '2108250002', '2', 12000, 0, 1, NULL, 12000, 0, 'paid', NULL, NULL, NULL, '(diproses: syafiq Muhammad Alif, 21/08/2025 22:25)', '2025-08-21 15:25:24', '2025-08-21 15:25:24'),
+(35, 12, NULL, '2108250002', '2', 8000, 0, 1, NULL, 8000, 0, 'paid', NULL, NULL, NULL, '(diproses: syafiq Muhammad Alif, 21/08/2025 22:25)', '2025-08-21 15:25:56', '2025-08-21 15:25:56'),
+(36, 12, NULL, '2108250003', '3', 22000, 0, 1, NULL, 22000, 0, 'paid', NULL, NULL, NULL, '(diproses: syafiq Muhammad Alif, 21/08/2025 22:26)', '2025-08-21 15:26:16', '2025-08-21 15:26:16'),
+(37, 12, NULL, '2108250004', '4', 1200000, 0, 7, NULL, 1200000, 0, 'paid', NULL, NULL, NULL, '(diproses: syafiq Muhammad Alif, 21/08/2025 22:27)', '2025-08-21 15:27:50', '2025-08-21 15:27:50'),
+(38, 14, NULL, '0711250008', '8', 28000, 0, 1, 'online', 28000, 0, 'paid', 'paid', 'picked_up', 'PO-EXBKUK7I', 'Marketplace pickup: berlian permata suci (089541064646)', '2025-11-07 16:08:17', '2025-11-07 16:08:17');
 
 -- --------------------------------------------------------
 
@@ -727,21 +900,28 @@ CREATE TABLE `transaction_details` (
 --
 
 INSERT INTO `transaction_details` (`id`, `transaction_id`, `item_id`, `qty`, `item_price`, `total`, `created_at`, `updated_at`) VALUES
-(12, 7, 307, 5, 3500, 17500, '2025-09-17 14:07:03', '2025-09-17 14:07:03'),
-(13, 7, 308, 4, 3500, 14000, '2025-09-17 14:07:03', '2025-09-17 14:07:03'),
-(14, 8, 308, 1, 3500, 3500, '2025-09-19 05:22:55', '2025-09-19 05:22:55'),
-(15, 9, 307, 2, 3500, 7000, '2025-10-07 04:47:52', '2025-10-07 04:47:52'),
-(16, 9, 308, 5, 3500, 17500, '2025-10-07 04:47:53', '2025-10-07 04:47:53'),
-(17, 10, 308, 7, 3500, 24500, '2025-10-29 09:06:08', '2025-10-29 09:06:08'),
-(18, 10, 307, 4, 3500, 14000, '2025-10-29 09:06:08', '2025-10-29 09:06:08'),
-(19, 11, 308, 2, 3500, 7000, '2025-10-29 09:06:11', '2025-10-29 09:06:11'),
-(20, 11, 307, 4, 3500, 14000, '2025-10-29 09:06:11', '2025-10-29 09:06:11'),
-(21, 12, 307, 4, 3500, 14000, '2025-10-29 09:06:13', '2025-10-29 09:06:13'),
-(22, 12, 308, 1, 3500, 3500, '2025-10-29 09:06:13', '2025-10-29 09:06:13'),
-(23, 13, 307, 46, 3500, 161000, '2025-10-29 13:12:33', '2025-10-29 13:12:33'),
-(24, 13, 308, 50, 3500, 175000, '2025-10-29 13:12:33', '2025-10-29 13:12:33'),
-(25, 14, 307, 150, 3500, 525000, '2025-10-29 13:15:25', '2025-10-29 13:15:25'),
-(26, 14, 308, 100, 3500, 350000, '2025-10-29 13:15:25', '2025-10-29 13:15:25');
+(10, 19, 311, 15, 7000, 105000, '2025-11-06 17:06:29', '2025-11-06 17:06:29'),
+(11, 22, 311, 15, 7000, 105000, '2025-11-06 18:21:11', '2025-11-06 18:21:11'),
+(12, 23, 311, 2, 7000, 14000, '2025-11-06 18:26:48', '2025-11-06 18:26:48'),
+(13, 24, 312, 25, 4000, 100000, '2025-11-06 20:24:24', '2025-11-06 20:24:24'),
+(14, 24, 311, 12, 7000, 84000, '2025-11-06 20:24:24', '2025-11-06 20:24:24'),
+(15, 25, 312, 15, 4000, 60000, '2025-11-07 14:04:52', '2025-11-07 14:04:52'),
+(16, 28, 311, 2, 7000, 14000, '2025-11-07 14:27:13', '2025-11-07 14:27:13'),
+(17, 28, 312, 5, 4000, 20000, '2025-11-07 14:27:13', '2025-11-07 14:27:13'),
+(18, 29, 311, 1, 7000, 7000, '2025-11-07 14:40:57', '2025-11-07 14:40:57'),
+(19, 29, 312, 2, 4000, 8000, '2025-11-07 14:40:57', '2025-11-07 14:40:57'),
+(20, 30, 311, 1, 7000, 7000, '2025-09-30 14:49:12', '2025-09-30 14:49:12'),
+(21, 30, 312, 4, 4000, 16000, '2025-09-30 14:49:12', '2025-09-30 14:49:12'),
+(22, 31, 312, 5, 4000, 20000, '2025-10-21 14:50:40', '2025-10-21 14:50:40'),
+(23, 32, 315, 30, 2000, 60000, '2025-10-21 14:54:54', '2025-10-21 14:54:54'),
+(24, 33, 314, 1, 22000, 22000, '2025-08-21 15:25:05', '2025-08-21 15:25:05'),
+(25, 34, 313, 1, 12000, 12000, '2025-08-21 15:25:24', '2025-08-21 15:25:24'),
+(26, 35, 315, 4, 2000, 8000, '2025-08-21 15:25:56', '2025-08-21 15:25:56'),
+(27, 36, 314, 1, 22000, 22000, '2025-08-21 15:26:16', '2025-08-21 15:26:16'),
+(28, 37, 313, 100, 12000, 1200000, '2025-08-21 15:27:50', '2025-08-21 15:27:50'),
+(29, 38, 314, 1, 22000, 22000, '2025-11-07 16:08:17', '2025-11-07 16:08:17'),
+(30, 38, 315, 1, 2000, 2000, '2025-11-07 16:08:17', '2025-11-07 16:08:17'),
+(31, 38, 312, 1, 4000, 4000, '2025-11-07 16:08:17', '2025-11-07 16:08:17');
 
 -- --------------------------------------------------------
 
@@ -754,12 +934,13 @@ CREATE TABLE `users` (
   `name` varchar(255) NOT NULL,
   `username` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `phone` varchar(255) NOT NULL,
-  `address` varchar(255) DEFAULT NULL,
-  `role` varchar(255) NOT NULL DEFAULT 'cashier',
-  `position` varchar(255) DEFAULT NULL,
+  `phone` varchar(255) DEFAULT NULL,
+  `address` text DEFAULT NULL,
+  `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(255) NOT NULL,
-  `picture` varchar(2048) NOT NULL DEFAULT 'profile.jpg',
+  `role` varchar(255) NOT NULL DEFAULT 'admin',
+  `position` varchar(255) DEFAULT NULL,
+  `picture` varchar(255) NOT NULL DEFAULT 'profile.jpg',
   `remember_token` varchar(100) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -769,14 +950,13 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `username`, `email`, `phone`, `address`, `role`, `position`, `password`, `picture`, `remember_token`, `created_at`, `updated_at`) VALUES
-(11, 'Admin', 'admin', 'dbauch@example.org', '(440) 392-0370', NULL, 'owner', 'Occupational Health Safety Specialist', '$2y$12$H3VttTnGR7c82snMTjSCbeQLVISM8H5TesiMJ8/MV9wtTiUqfpNL2', 'profile.jpg', 'on0ThdwJwc6zZyI3IqWOVjNWnG0PaAnMI4mWSHKTDCzcdjuQFjiZ7qGIbQFx', '2025-01-19 06:28:45', '2025-01-19 06:28:45'),
-(12, 'syafiq Muhammad Alif', 'syafiq', 'syafiq12@gmail.com', '08924224242', NULL, 'supervisor', 'Manager Oprasional', '$2y$12$dpibl0hTUZTgaL6FUvPu/.mdD/xJCYOUuWrmEDOFjBhA8B1BYCUam', 'profile.jpg', NULL, '2025-07-22 07:24:38', '2025-07-22 07:24:38'),
-(13, 'jihan Kirana', 'jihan', 'jihan12@gmail.com', '082442424444', NULL, 'admin', 'Admin Gudang', '$2y$12$xtA1TWfEeiI5iQapHproHe6gzCbx9kjlt8bZez.ePVf7Xza3dwIg2', 'profile.jpg', NULL, '2025-07-22 07:25:20', '2025-07-22 07:25:20'),
-(14, 'leonando prastiko', 'leonando', 'leonando12@gmail.com', '089242121232', NULL, 'cashier', 'Kasir', '$2y$12$RhUlTXi2L0yN5xbPyUR7eOlUSxg83HVXKGc5r0M1Ooz.42JK4rkPO', 'profile.jpg', NULL, '2025-07-22 07:25:57', '2025-07-22 07:25:57'),
-(15, 'berlian', 'berlian', 'berlian@gmail.com', '012372310972', 'berlianberlianberlian', 'customer', NULL, '$2y$12$Arirw85DqdAziXATFFFBTeNc8V6SfjsSMVtGul6s48J6uO1CTmnz6', 'profile.jpg', NULL, '2025-09-04 02:07:55', '2025-09-04 02:07:55'),
-(16, 'abuya', 'abuya', 'abuya@gmail.com', '081729337222', 'abuyaabuyaabuya', 'customer', NULL, '$2y$12$At.MJVw/TtfNxrR6h8j/Sutw4D2Z1bJxKeRfuUrYubIizRV4Osk9G', 'profile.jpg', NULL, '2025-09-04 02:22:26', '2025-09-04 02:22:26'),
-(18, 'farhan', 'farhan', 'farhan@gmail.com', '023149712397', 'pakjo', 'customer', NULL, '$2y$12$O6i5IkH2EO7D9Qz9ScF9YuT1pyNLkD7zBSGowjDqfLlmuZYFd463G', 'profile.jpg', NULL, '2025-10-22 10:48:37', '2025-10-22 10:48:37');
+INSERT INTO `users` (`id`, `name`, `username`, `email`, `phone`, `address`, `email_verified_at`, `password`, `role`, `position`, `picture`, `remember_token`, `created_at`, `updated_at`) VALUES
+(11, 'Admin', 'admin', 'admin@example.com', NULL, NULL, NULL, '$2y$12$Fsrtrf5lhPBp7bvFsxlj5OYahk.W.5zPE0DWjqfrT/pO9563n3oJe', 'owner', 'Owner', 'profile.jpg', NULL, '2025-11-03 19:01:38', '2025-11-03 19:01:38'),
+(12, 'syafiq Muhammad Alif', 'syafiq', 'syafiqma12@gmail.com', '0895701033483', NULL, NULL, '$2y$12$h4BahVKKSHlJi7wq4z0KUe4cBLF/N66WBRMk0Q2XvcErxMO13u1I2', 'supervisor', 'Manager Operasional', '1762323210.jpg', NULL, '2025-11-04 23:13:30', '2025-11-04 23:13:30'),
+(14, 'riski halimawan', 'riski', 'Riskihal1221@gmail.com', '089211223322', NULL, NULL, '$2y$12$/HzTkTGEjwgiMqGj0WSFN.DtK0NTIjYP8Q0cbrEFKKOQ/UcjbJUt6', 'cashier', 'Kasir', '1762323377.jpg', NULL, '2025-11-04 23:16:17', '2025-11-04 23:16:17'),
+(15, 'abuya', 'abuya', 'abuya12@gmail.com', '08923232', 'Jalan Griyas', NULL, '$2y$12$w9TB6wEzmqJoaHYHxZEWjOJUWRmwbhaH/IMMrmTnR0/maRxj51JQu', 'customer', NULL, 'profile.jpg', NULL, '2025-11-04 23:17:31', '2025-11-04 23:17:31'),
+(16, 'berlian permata suci', 'berlian', 'berlianpsuci22@Gmail.com', '0892452222', 'perumahan mitra agung', NULL, '$2y$12$Dnv3MpN1dQQt3Qp.G.YJZO4IGqbWohtAL0FRjZt11Fp.WYBuWbzcC', 'customer', NULL, 'profile.jpg', NULL, '2025-11-04 23:18:04', '2025-11-04 23:18:04'),
+(17, 'jihan kirana', 'jihank', 'jihank12@gmail.com', '08989612983', NULL, NULL, '$2y$12$.cpWDLmSbsHyDGCHoW5qROOhF/qhdVzdg3Hdf0a6yIow8BRoqbNvu', 'admin', 'Admin Gudang', '1762331727.jpg', NULL, '2025-11-05 01:35:27', '2025-11-05 01:35:27');
 
 -- --------------------------------------------------------
 
@@ -825,6 +1005,14 @@ ALTER TABLE `carts`
   ADD KEY `carts_item_id_foreign` (`item_id`);
 
 --
+-- Indexes for table `cart_items`
+--
+ALTER TABLE `cart_items`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `cart_items_user_id_item_id_unique` (`user_id`,`item_id`),
+  ADD KEY `cart_items_item_id_foreign` (`item_id`);
+
+--
 -- Indexes for table `categories`
 --
 ALTER TABLE `categories`
@@ -849,16 +1037,48 @@ ALTER TABLE `failed_jobs`
 --
 ALTER TABLE `goods_receipts`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `goods_receipts_gr_number_unique` (`gr_number`),
-  ADD KEY `goods_receipts_purchase_order_id_foreign` (`purchase_order_id`),
-  ADD KEY `goods_receipts_received_by_foreign` (`received_by`);
+  ADD UNIQUE KEY `gr_number` (`gr_number`),
+  ADD KEY `purchase_order_id` (`purchase_order_id`),
+  ADD KEY `received_by` (`received_by`);
 
 --
 -- Indexes for table `goods_receipt_items`
 --
 ALTER TABLE `goods_receipt_items`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `goods_receipt_items_goods_receipt_id_foreign` (`goods_receipt_id`);
+  ADD KEY `goods_receipt_id` (`goods_receipt_id`),
+  ADD KEY `idx_lot_code` (`lot_code`),
+  ADD KEY `idx_item_expiry` (`item_id`,`expiry_date`),
+  ADD KEY `idx_batch_number` (`batch_number`);
+
+--
+-- Indexes for table `inventory_batches`
+--
+ALTER TABLE `inventory_batches`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `inventory_batches_lot_code_index` (`lot_code`),
+  ADD KEY `inventory_batches_item_id_expiry_date_index` (`item_id`,`expiry_date`);
+
+--
+-- Indexes for table `inventory_movements`
+--
+ALTER TABLE `inventory_movements`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_gr_item_type` (`goods_receipt_item_id`,`type`),
+  ADD KEY `idx_reference` (`ref_type`,`ref_id`);
+
+--
+-- Indexes for table `inventory_records`
+--
+ALTER TABLE `inventory_records`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `inventory_records_goods_receipt_id_foreign` (`goods_receipt_id`);
+
+--
+-- Indexes for table `inventory_settings`
+--
+ALTER TABLE `inventory_settings`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `invoices`
@@ -881,7 +1101,7 @@ ALTER TABLE `items`
 --
 ALTER TABLE `item_supplier`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `item_supplier_item_id_foreign` (`item_id`),
+  ADD UNIQUE KEY `item_supplier_item_id_supplier_id_unique` (`item_id`,`supplier_id`),
   ADD KEY `item_supplier_supplier_id_foreign` (`supplier_id`);
 
 --
@@ -939,7 +1159,8 @@ ALTER TABLE `purchase_orders`
 --
 ALTER TABLE `purchase_order_items`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `purchase_order_items_purchase_order_id_foreign` (`purchase_order_id`);
+  ADD KEY `purchase_order_items_purchase_order_id_foreign` (`purchase_order_id`),
+  ADD KEY `purchase_order_items_item_id_foreign` (`item_id`);
 
 --
 -- Indexes for table `purchase_requests`
@@ -947,7 +1168,9 @@ ALTER TABLE `purchase_order_items`
 ALTER TABLE `purchase_requests`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `purchase_requests_pr_number_unique` (`pr_number`),
-  ADD KEY `purchase_requests_requested_by_foreign` (`requested_by`);
+  ADD KEY `purchase_requests_requested_by_foreign` (`requested_by`),
+  ADD KEY `purchase_requests_supplier_id_foreign` (`supplier_id`),
+  ADD KEY `purchase_requests_approved_by_foreign` (`approved_by`);
 
 --
 -- Indexes for table `purchase_request_items`
@@ -965,6 +1188,13 @@ ALTER TABLE `sessions`
   ADD KEY `sessions_last_activity_index` (`last_activity`);
 
 --
+-- Indexes for table `stock_movement_analyses`
+--
+ALTER TABLE `stock_movement_analyses`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `stock_movement_analyses_item_id_foreign` (`item_id`);
+
+--
 -- Indexes for table `suppliers`
 --
 ALTER TABLE `suppliers`
@@ -975,14 +1205,14 @@ ALTER TABLE `suppliers`
 --
 ALTER TABLE `supplier_products`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `supplier_products_supplier_id_foreign` (`supplier_id`);
+  ADD KEY `supplier_products_supplier_id_foreign` (`supplier_id`),
+  ADD KEY `supplier_products_item_id_foreign` (`item_id`);
 
 --
 -- Indexes for table `transactions`
 --
 ALTER TABLE `transactions`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `transactions_pickup_code_unique` (`pickup_code`),
   ADD KEY `transactions_user_id_foreign` (`user_id`),
   ADD KEY `transactions_customer_id_foreign` (`customer_id`),
   ADD KEY `transactions_payment_method_id_foreign` (`payment_method_id`);
@@ -1001,8 +1231,7 @@ ALTER TABLE `transaction_details`
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `users_username_unique` (`username`),
-  ADD UNIQUE KEY `users_email_unique` (`email`),
-  ADD UNIQUE KEY `users_phone_unique` (`phone`);
+  ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
 -- Indexes for table `wholesale_prices`
@@ -1019,13 +1248,19 @@ ALTER TABLE `wholesale_prices`
 -- AUTO_INCREMENT for table `absences`
 --
 ALTER TABLE `absences`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=157;
+  MODIFY `id` int(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `carts`
 --
 ALTER TABLE `carts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+
+--
+-- AUTO_INCREMENT for table `cart_items`
+--
+ALTER TABLE `cart_items`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -1037,7 +1272,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -1049,25 +1284,49 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `goods_receipts`
 --
 ALTER TABLE `goods_receipts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `goods_receipt_items`
 --
 ALTER TABLE `goods_receipt_items`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+
+--
+-- AUTO_INCREMENT for table `inventory_batches`
+--
+ALTER TABLE `inventory_batches`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `inventory_movements`
+--
+ALTER TABLE `inventory_movements`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `inventory_records`
+--
+ALTER TABLE `inventory_records`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `inventory_settings`
+--
+ALTER TABLE `inventory_settings`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `invoices`
 --
 ALTER TABLE `invoices`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `items`
 --
 ALTER TABLE `items`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=310;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=316;
 
 --
 -- AUTO_INCREMENT for table `item_supplier`
@@ -1085,7 +1344,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `marketplace_orders`
 --
 ALTER TABLE `marketplace_orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `marketplace_order_items`
@@ -1097,7 +1356,7 @@ ALTER TABLE `marketplace_order_items`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `payment_methods`
@@ -1109,55 +1368,61 @@ ALTER TABLE `payment_methods`
 -- AUTO_INCREMENT for table `purchase_orders`
 --
 ALTER TABLE `purchase_orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `purchase_order_items`
 --
 ALTER TABLE `purchase_order_items`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=85;
 
 --
 -- AUTO_INCREMENT for table `purchase_requests`
 --
 ALTER TABLE `purchase_requests`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `purchase_request_items`
 --
 ALTER TABLE `purchase_request_items`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+
+--
+-- AUTO_INCREMENT for table `stock_movement_analyses`
+--
+ALTER TABLE `stock_movement_analyses`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `suppliers`
 --
 ALTER TABLE `suppliers`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `supplier_products`
 --
 ALTER TABLE `supplier_products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `transactions`
 --
 ALTER TABLE `transactions`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `transaction_details`
 --
 ALTER TABLE `transaction_details`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `wholesale_prices`
@@ -1183,17 +1448,43 @@ ALTER TABLE `carts`
   ADD CONSTRAINT `carts_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
 --
+-- Constraints for table `cart_items`
+--
+ALTER TABLE `cart_items`
+  ADD CONSTRAINT `cart_items_item_id_foreign` FOREIGN KEY (`item_id`) REFERENCES `items` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `cart_items_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+
+--
 -- Constraints for table `goods_receipts`
 --
 ALTER TABLE `goods_receipts`
-  ADD CONSTRAINT `goods_receipts_purchase_order_id_foreign` FOREIGN KEY (`purchase_order_id`) REFERENCES `purchase_orders` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `goods_receipts_received_by_foreign` FOREIGN KEY (`received_by`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `goods_receipts_ibfk_1` FOREIGN KEY (`purchase_order_id`) REFERENCES `purchase_orders` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `goods_receipts_ibfk_2` FOREIGN KEY (`received_by`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `goods_receipt_items`
 --
 ALTER TABLE `goods_receipt_items`
-  ADD CONSTRAINT `goods_receipt_items_goods_receipt_id_foreign` FOREIGN KEY (`goods_receipt_id`) REFERENCES `goods_receipts` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `fk_gr_items_item` FOREIGN KEY (`item_id`) REFERENCES `items` (`id`),
+  ADD CONSTRAINT `goods_receipt_items_ibfk_1` FOREIGN KEY (`goods_receipt_id`) REFERENCES `goods_receipts` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `inventory_batches`
+--
+ALTER TABLE `inventory_batches`
+  ADD CONSTRAINT `inventory_batches_item_id_foreign` FOREIGN KEY (`item_id`) REFERENCES `items` (`id`);
+
+--
+-- Constraints for table `inventory_movements`
+--
+ALTER TABLE `inventory_movements`
+  ADD CONSTRAINT `fk_movement_gr_item` FOREIGN KEY (`goods_receipt_item_id`) REFERENCES `goods_receipt_items` (`id`);
+
+--
+-- Constraints for table `inventory_records`
+--
+ALTER TABLE `inventory_records`
+  ADD CONSTRAINT `inventory_records_goods_receipt_id_foreign` FOREIGN KEY (`goods_receipt_id`) REFERENCES `goods_receipts` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `invoices`
@@ -1238,13 +1529,16 @@ ALTER TABLE `purchase_orders`
 -- Constraints for table `purchase_order_items`
 --
 ALTER TABLE `purchase_order_items`
+  ADD CONSTRAINT `purchase_order_items_item_id_foreign` FOREIGN KEY (`item_id`) REFERENCES `items` (`id`) ON DELETE SET NULL,
   ADD CONSTRAINT `purchase_order_items_purchase_order_id_foreign` FOREIGN KEY (`purchase_order_id`) REFERENCES `purchase_orders` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `purchase_requests`
 --
 ALTER TABLE `purchase_requests`
-  ADD CONSTRAINT `purchase_requests_requested_by_foreign` FOREIGN KEY (`requested_by`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `purchase_requests_approved_by_foreign` FOREIGN KEY (`approved_by`) REFERENCES `users` (`id`) ON DELETE SET NULL,
+  ADD CONSTRAINT `purchase_requests_requested_by_foreign` FOREIGN KEY (`requested_by`) REFERENCES `users` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `purchase_requests_supplier_id_foreign` FOREIGN KEY (`supplier_id`) REFERENCES `suppliers` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `purchase_request_items`
@@ -1253,9 +1547,16 @@ ALTER TABLE `purchase_request_items`
   ADD CONSTRAINT `purchase_request_items_purchase_request_id_foreign` FOREIGN KEY (`purchase_request_id`) REFERENCES `purchase_requests` (`id`) ON DELETE CASCADE;
 
 --
+-- Constraints for table `stock_movement_analyses`
+--
+ALTER TABLE `stock_movement_analyses`
+  ADD CONSTRAINT `stock_movement_analyses_item_id_foreign` FOREIGN KEY (`item_id`) REFERENCES `items` (`id`) ON DELETE CASCADE;
+
+--
 -- Constraints for table `supplier_products`
 --
 ALTER TABLE `supplier_products`
+  ADD CONSTRAINT `supplier_products_item_id_foreign` FOREIGN KEY (`item_id`) REFERENCES `items` (`id`) ON DELETE SET NULL,
   ADD CONSTRAINT `supplier_products_supplier_id_foreign` FOREIGN KEY (`supplier_id`) REFERENCES `suppliers` (`id`) ON DELETE CASCADE;
 
 --
